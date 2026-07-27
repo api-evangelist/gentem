@@ -1,7 +1,26 @@
 aid: gentem
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gentem.png
 name: Gentem
-description: Gentem is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Gentem is a healthcare revenue cycle management (RCM) technology company that helps
+  medical practices automate insurance billing and get paid faster. Its platform streamlines
+  eligibility verification, claims submission, denial and payment management, and patient
+  billing for independent and specialty providers, with the goal of reducing administrative
+  burden and accelerating provider cash flow. Gentem was added to the API Evangelist network
+  as a portfolio company of 500 Global; its public developer surface is not currently
+  reachable for artifact harvesting (the primary domain is protected behind a bot challenge
+  and no developer, docs, or API subdomains resolve), so this profile carries verified
+  domain-security probe data plus company identity.
 url: https://raw.githubusercontent.com/api-evangelist/gentem/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Revenue Cycle Management
+- Medical Billing
+- Health Tech
+- Fintech
+- Payments
+- Insurance Claims
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gentem-domain-security.yml
 - type: Website
   url: https://gentem.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
